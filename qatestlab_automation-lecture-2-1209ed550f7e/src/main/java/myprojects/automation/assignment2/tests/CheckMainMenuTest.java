@@ -5,8 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,8 +24,7 @@ public class CheckMainMenuTest extends BaseScript{
         passwordField.sendKeys("Xcg7299bnSmMuRLp9ITw");
         WebElement buttonLogin = driver.findElement(By.name("submitLogin"));
         buttonLogin.click();
-        Thread.sleep(1000);
-
+        
         WebElement adminDashboard = driver.findElement(By.xpath("//*[@id=\"tab-AdminDashboard\"]/a/span"));
         adminDashboard.click();
         String s1 = driver.getTitle();
